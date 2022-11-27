@@ -3,15 +3,17 @@ micronaut:
     name: veiculoService
 datasources:
   default:
-    driverClassName: org.postgresql.Driver
-    db-type: postgres
-    dialect: POSTGRES
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: admin
 jpa:
   default:
     properties:
       hibernate:
         hbm2ddl:
           auto: update
+      show_sql: true
+      format_sql: true
 netty:
   default:
     allocator:
