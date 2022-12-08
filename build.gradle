@@ -31,6 +31,7 @@ dependencies {
     implementation("io.micronaut:micronaut-validation")
     implementation("io.micronaut.kafka:micronaut-kafka:2.8.1")
     implementation("redis.clients:jedis:3.6.3")
+    implementation ("io.micronaut.discovery:micronaut-discovery-client:")
 
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 
